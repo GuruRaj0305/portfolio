@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+}
+
+.section {
+    display: flex;
+}
+
+#intro_section {
+    margin: auto;
+}
+#intro_section a {
+    text-decoration: none;
+}
+
+#intro_section h2 {
+    color: rgb(127, 244, 255);
+    width: 300px;
+    height: 100px;
+    margin: 50px 100px;
+    font-size: 100px;
+    top: 0;
+    transition: 800ms;
+    overflow: hidden;
+    
+}
+
+
+
+#welcome {
+    color: rgb(246, 255, 127);
+    width: 630px;
+    margin: 50px 100px;
+    height: 60px;
+    font-size: 50px;
+    transition: 800ms;
+}
+
+#i_am {
+    margin: 50px 100px 0px 100px;  
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    height: 30px;
+    transition: 800ms;
+    width: 300px;
+}
+
+#intro_section h3 {
+    color: rgb(255, 255, 255);
+    margin: 0px 100px 100px 100px;
+    font-size: 100px;
+    height: 100px;
+    transition: 800ms;
+    width: 400px;
+}
+
+#intro_section h2:hover,
+#welcome:hover,
+#i_am:hover,
+#intro_section h3:hover{
+    font-size: 0;
+}
+
+#intro_section h2:hover:after{
+    content: "About";
+    font-size: 100px;
+    color: greenyellow;
+}
+
+#welcome:hover:after{
+    content: "Projects";
+    color: greenyellow;
+    font-size: 50px;
+}
+
+#i_am:hover:after{
+    content: "Contact";
+    font-size: 30px;
+    color: greenyellow;
+}
+
+#intro_section h3:hover:after{
+    content: "Feedback";
+    font-size: 100px;
+    color: greenyellow;
+}
+
+
+#img_section img{
+    height: 99.5vh;
+}
+#img_section {
+    margin: 0 auto;
+}

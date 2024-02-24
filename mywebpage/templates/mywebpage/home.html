@@ -1,9 +1,10 @@
 {% extends "base.html" %}
 {% load static %}
 
-{% block css_link %}{% endblock %}
+{% block css_link %}
+    <link rel="stylesheet" href="{% static "mywebpage/home.css" %}">
+{% endblock %}
 
-{% comment %} {% block logo_img_path %}"{% static "mywebpage/images/gimage.png" %}"{% endblock  %} {% endcomment %}
 
 
 {% block title %}Home{% endblock  %}
@@ -11,8 +12,20 @@
 
 {% block content %}
 
-    <h1>hai</h1>
-    <img src = "{% static "mywebpage/images/gimage.png" %}" alt = "image">
+<section class="section">
+
+    <div id = "intro_section">
+
+        <a href=""><h2>Hello</h2></a>
+        <a href=""><p id="welcome">Welcome to my page...</p></a>
+        <a href=""><p id="i_am">I am </p></a>
+        <a href=""><h3>Gururaj</h3></a>
+
+    </div>
+    <div id = "img_section">
+        <img src = "{% static "mywebpage/images/myimage.jpg" %}" alt = "my image">
+    </div>
+</section> 
 
 {% endblock %}
         
