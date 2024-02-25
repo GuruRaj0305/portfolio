@@ -3,9 +3,24 @@
     padding: 0;
 }
 
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
 body {
     background-color: black;
+    animation: fadeInAnimation ease 8s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+
 }
+
+
 
 .section {
     display: flex;

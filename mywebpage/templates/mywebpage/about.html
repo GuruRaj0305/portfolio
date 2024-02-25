@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block css_link %}
+<link rel="stylesheet" href="{% static "mywebpage/about.css" %}">
+<link rel="stylesheet" href="{% static "mywebpage/navi.css" %}">
+{% endblock %}
+
+{% block title %}About{% endblock  %}
+
+{% block content %}
+
+<div id = "nav_div">
+    <a href= "{% url "home" %}"><nav>⤺goBack</nav></a>
+</div>
+
+<section id = "about_section">
+
+    
+    <h1>About me.</h1>
+
+    <p>Hello,</p>
+
+    <p>My self Gururaj, well intrested in programming and even more intrested in python.</p>
+
+    <p>As an fresher to IT field, high excited to learn and experience technologys and implementing all for new experiments.</p>
+
+    <p>I believe in defining myself not by my past, but by the work I aspire to accomplish. I value continuous learning, self-challenge, and meaningful pursuits. Fueled by high energy and boundless enthusiasm, I am easily inspired and always eager to follow my passions. My diverse interests, hobbies, and areas of study fuel my passion for creativity and innovation. I am a fast learner, capable of acquiring new skills and managing multiple projects with ease. I strive to develop expertise in several areas throughout my life and career.</p>
+
+    <p>You can find more information about my biography experience, skills, education, and other aspects in the attached PDF below.:</p>
+
+    <p><a href="{% url 'file_download' file_id="1" %}">Download File</a></p>
+
+    
+</section>
+
+
+
+{% endblock %}

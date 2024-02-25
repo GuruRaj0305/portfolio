@@ -1,0 +1,25 @@
+#nav_div {
+    display: grid;
+    justify-content: end;
+
+}
+
+#nav_div a {
+    text-decoration: none;
+}
+
+#nav_div nav{
+    color: gainsboro;
+    font-size: 30px;
+    width: 150px;
+    margin: 40px 100px;
+}
+
+#nav_div nav:hover{
+    font-size: 0;
+}
+
+#nav_div nav:hover::after{
+    content: "⤺goHome";
+    font-size: 30px;
+}
