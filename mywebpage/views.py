@@ -1,8 +1,11 @@
+from typing import Any
+from django.db.models.query import QuerySet
 from django.shortcuts import render
 from django.http import FileResponse
 from django.shortcuts import get_object_or_404
 from django.views import View
-from .models import MyFile
+from .models import MyFile, Projects
+from django.views.generic import ListView
 
 
 
@@ -22,3 +25,15 @@ class FileDownloadView(View):
         response = FileResponse(open(file_path, 'rb'))
         response['Content-Disposition'] = 'attachment; filename="{}"'.format(my_file.file.name)
         return response
+    
+
+class ProjectsView(ListView):
+    template_name = "mywebpage/projects.html"
+    model = Projects
+    context_object_name = "projects"
+
+    def get_queryset(self):
+        base_query = super().get_queryset()
+        data = base_query.order_by("-pk")
+        return data
+    

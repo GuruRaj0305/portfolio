@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block css_link %}
+<link rel="stylesheet" href="{% static "mywebpage/projects.css" %}">
+<link rel="stylesheet" href="{% static "mywebpage/navi.css" %}">
+{% endblock %}
+
+{% block title %}Projects{% endblock  %}
+
+{% block content %}
+
+<div id = "nav_div">
+    <a href= "{% url "home" %}"><nav>⤺goBack</nav></a>
+</div>
+<div id = "head_div">
+    <h1>Personal Projects.</h1>
+</div>
+
+<section id = "project_section">
+
+    <ul>
+    {% for project in projects %}
+        <li>
+            <a href={{project.link}}>
+                <div class = "project_container">
+                    <h2>{{project.title}}</h2>
+                    <img src = "{{ project.image.url }}" alt = "{{ project.title }}">
+                    <p>{{project.discription}}</p>
+                </div>
+            </a>
+        </li>
+    
+    {% endfor %}
+    </ul>
+
+</section>
+
+{% endblock %}
