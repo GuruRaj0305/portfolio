@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+body {
+    background-color: black;
+    animation: fadeInAnimation ease 8s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+
+}
+
+
+
+.section {
+    display: flex;
+}
+
+#intro_section {
+    margin: auto;
+    width: 30vw;
+}
+#intro_section a {
+    text-decoration: none;
+}
+
+#intro_section h2 {
+    color: rgb(127, 244, 255);
+    width: 300px;
+    height: 100px;
+    margin: 20px 100px;
+    font-size: 100px;
+    top: 0;
+    transition: 800ms;
+    overflow: hidden;
+    
+}
+
+
+
+#welcome {
+    color: rgb(94, 94, 94);
+    width: 650px;
+    margin: 20px 100px;
+    height: 75px;
+    font-size: 50px;
+    transition: 800ms;
+}
+
+#i_am {
+    margin: 20px 100px;  
+    color: rgb(94, 94, 94);
+    font-size: 50px;
+    height: 75px;
+    transition: 800ms;
+    width: 300px;
+}
+
+#intro_section h3 {
+    color: rgb(94, 94, 94);
+    margin: 0px 100px 100px 100px;
+    font-size: 50px;
+    height: 100px;
+    transition: 800ms;
+    width: 300px;
+}
+
+#intro_section h2:hover,
+#welcome:hover,
+#i_am:hover,
+#intro_section h3:hover{
+    font-size: 0;
+}
+
+#intro_section h2:hover:after{
+    content: "About";
+    font-size: 100px;
+    color: rgb(255, 255, 255);
+}
+
+#welcome:hover:after{
+    content: "Projects";
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+}
+
+#i_am:hover:after{
+    content: "Contact";
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+}
+
+#intro_section h3:hover:after{
+    content: "Feedback";
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+}
+
+
+#img_section img{
+    height: 99.5vh;
+}
+#img_section {
+    margin: 0 auto;
+}

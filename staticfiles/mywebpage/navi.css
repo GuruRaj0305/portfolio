@@ -1,0 +1,32 @@
+#nav_div {
+    display: grid;
+    justify-content: end;
+    grid-template-columns: auto auto;
+
+}
+
+#nav_div a {
+    text-decoration: none;
+}
+
+.toggle,
+#all {
+    color: rgb(100, 100, 100);
+    font-size: 30px;
+    width: 200px;
+    margin: 40px 100px;
+}
+
+.toggle:hover{
+    font-size: 0;
+}
+
+.toggle:hover::after{
+    content: "⤺goHome";
+    font-size: 30px;
+    color: white;
+}
+
+#all:hover {
+    color: white;
+}

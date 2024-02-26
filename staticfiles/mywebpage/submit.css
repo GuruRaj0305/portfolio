@@ -1,0 +1,46 @@
+body{
+    animation: BodyAnimation ease 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes BodyAnimation {
+    0% {
+        background-color: rgb(73, 73, 73);
+    }
+    100% {
+        background-color: black;
+    }
+}
+
+#submited {
+    color: beige;
+    font-size: 40px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+#allcomments {
+    color: beige;
+    font-size: 20px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+}
+
+#allcommentspara {
+    display: flex;
+    justify-content: center;
+    width: 300px;
+    background-color: rgb(34, 33, 32);
+    padding: 20px;
+    border-radius: 30px;
+
+}
+#allcommentspara:hover{
+    color: black;
+    background-color: rgb(118, 154, 154);
+}
