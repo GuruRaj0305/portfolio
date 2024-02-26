@@ -62,6 +62,10 @@ class AllFeedbackView(ListView):
     template_name = "mywebpage/every_feedback.html"
     model = FeedBack
     context_object_name = "feedbacks"
+    def get_queryset(self):
+        base_query = super().get_queryset()
+        data = base_query.order_by("-pk")
+        return data
 
 def thankyou(request):
     return render(request, "mywebpage/submited.html")
