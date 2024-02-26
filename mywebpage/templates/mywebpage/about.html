@@ -11,7 +11,7 @@
 {% block content %}
 
 <div id = "nav_div">
-    <a href= "{% url "home" %}"><nav>⤺goBack</nav></a>
+    <a href= "{% url "home" %}"><nav class="toggle">⤺goBack</nav></a>
 </div>
 
 <section id = "about_section">
@@ -29,7 +29,7 @@
 
     <p>You can find more information about my biography experience, skills, education, and other aspects in the attached PDF below.:</p>
 
-    <p><a href="{% url 'file_download' file_id="1" %}">Download File</a></p>
+    <p><a href="{% url 'file_download' file_id="1" %}">Download resume</a></p>
 
     
 </section>

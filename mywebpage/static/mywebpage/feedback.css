@@ -1,0 +1,89 @@
+body{
+    animation: BodyAnimation ease 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes BodyAnimation {
+    0% {
+        background-color: rgb(73, 73, 73);
+    }
+    100% {
+        background-color: black;
+    }
+}
+@keyframes fadeInAnimation {
+    0% {
+        color: rgb(0, 0, 0);
+    }
+   
+    100% {
+        color: white;
+    }
+}
+
+#feedback_section {
+    width: 65vw;
+    margin: auto;
+}
+
+#feedback_section h1 {
+    color: rgb(188, 188, 188);
+    margin: 20px 0 50px 0;
+    font-size: 50px;
+    margin: 50px 0 0 0;
+    animation: fadeInAnimation ease 3s;
+
+}
+
+#feedback_section p,
+.form_class div label {
+    color: rgb(143, 143, 143);
+    font-size: 25px;
+    margin: 0;
+}
+
+.form_class {
+    margin: 20px;
+}
+
+.form_class div{
+    margin: 3px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.form_class div input{
+    width: 800px;
+    height: 30px;
+    background-color: rgb(42, 42, 42);
+    color: azure;
+    font-size: inherit;
+}
+
+.form_class div textarea{
+    width: 800px;
+    background-color: rgb(42, 42, 42);
+    color: azure;
+    font-size: 20px;
+}
+/* 
+.form_class div label{
+    background-color: blueviolet;
+} */
+.submit{
+    margin: 30px;
+    width: 150px;
+    height: 40px;
+    background-color: black;
+    border-radius: 10px;
+    color: rgb(0, 255, 128);
+    font-size: 22px ;
+}
+.submit:hover{
+    background-color: rgb(44, 50, 55);
+
+}
+

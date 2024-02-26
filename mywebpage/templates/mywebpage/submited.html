@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block css_link %}
+<link rel="stylesheet" href="{% static "mywebpage/submit.css" %}">
+<link rel="stylesheet" href="{% static "mywebpage/navi.css" %}">
+{% endblock %}
+
+{% block title %}Thank you{% endblock  %}
+        
+{% block content %}
+<div id = "nav_div">
+    <a href= "{% url "home" %}"><nav class="toggle">⤺goBack</nav></a>
+</div>
+
+<section >
+
+    <p id="submited">Your Form has been submited...</p>
+
+    <a id = "allcomments" href="{% url "allcomments" %}"><P id = "allcommentspara">See others comment.</p></a>
+
+</section>
+
+{% endblock %}
+

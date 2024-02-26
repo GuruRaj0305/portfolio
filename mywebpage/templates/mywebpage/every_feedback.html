@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block css_link %}
+<link rel="stylesheet" href="{% static "mywebpage/comments.css" %}">
+<link rel="stylesheet" href="{% static "mywebpage/navi.css" %}">
+{% endblock %}
+
+
+{% block title %}Feedback{% endblock  %}
+
+
+
+{% block content %}
+
+<div id = "nav_div">
+    <a href= "{% url "home" %}"><nav class="toggle">⤺goBack</nav></a>
+</div>
+
+<section id = "feedback_section">
+    <h1>All Comments</h1>
+
+        {% for feedback in feedbacks %}
+        <div class="single_feedback">
+            <p id="username">{{feedback.user_name}}</p>
+            <p id="mailid">{{feedback.user_mail_id}}</p>
+            <p id="comment">{{feedback.user_feedback}}</p>
+        </div>
+        {% endfor %}
+
+    <p id="your_turn">Now thats your turn<p>
+
+</section>
+{% endblock %}
+     
+

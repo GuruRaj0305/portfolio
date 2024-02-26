@@ -1,6 +1,7 @@
 #nav_div {
     display: grid;
     justify-content: end;
+    grid-template-columns: auto auto;
 
 }
 
@@ -8,18 +9,24 @@
     text-decoration: none;
 }
 
-#nav_div nav{
-    color: gainsboro;
+.toggle,
+#all {
+    color: rgb(100, 100, 100);
     font-size: 30px;
-    width: 150px;
+    width: 200px;
     margin: 40px 100px;
 }
 
-#nav_div nav:hover{
+.toggle:hover{
     font-size: 0;
 }
 
-#nav_div nav:hover::after{
+.toggle:hover::after{
     content: "⤺goHome";
     font-size: 30px;
+    color: white;
+}
+
+#all:hover {
+    color: white;
 }

@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block css_link %}
+<link rel="stylesheet" href="{% static "mywebpage/feedback.css" %}">
+<link rel="stylesheet" href="{% static "mywebpage/navi.css" %}">
+{% endblock %}
+
+
+{% block title %}Feedback{% endblock  %}
+
+
+
+{% block content %}
+
+<div id = "nav_div">
+    <a href= "{% url "allcomments" %}"><nav id = "all">All Comments</nav></a>
+    <a href= "{% url "home" %}"><nav class="toggle">⤺goBack</nav></a>
+</div>
+
+<section id = "feedback_section">
+    <h1>
+        wanna comment on me?
+    </h1>
+    <p>Then feel free to fill below form</p>
+
+<form method = "POST">
+   
+    {% csrf_token %}
+    <div class = "form_class">
+        <div>
+    {{form}}
+        </div>
+    <button class = "submit">Submit</button>
+    </div>
+</form>
+
+</section>
+{% endblock %}
+     
+
+
+        
+{% block javascript %}{% endblock %}
