@@ -81,7 +81,7 @@ DATABASES = {
         'NAME': 'postgres',
         'USER': 'djangoportfolio',
         'PASSWORD': 'portfoliodatabase',
-        'HOST': 'django-portfolio.cfomi4oq8y8n.ap-southeast-2.rds.amazonaws.com',
+        'HOST': 'postgres-db.cfomi4oq8y8n.ap-southeast-2.rds.amazonaws.com',
         'PORT': '5432'
     }
 }
