@@ -4,3 +4,4 @@ mysqlclient==1.4.6
 pillow==8.0.1
 sqlparse==0.4.3
 tzdata==2024.1
+python==3.9
