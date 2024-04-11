@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-9olcd=v3@k-%#xy#itwny6n2ieos34srfh5^qrp31q%+^078h&
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['.vercel.app']
+ALLOWED_HOSTS = []
 
 # Application definition
 
@@ -78,12 +78,12 @@ WSGI_APPLICATION = 'portfolio.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'postgres',
-        'USER': 'postgres',
-        'PASSWORD': 'portfoliodatabase',
-        'HOST': 'database-1.cfomi4oq8y8n.ap-southeast-2.rds.amazonaws.com',
-        'PORT': '5432'
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'portfolio',
+        'USER': 'admin',
+        'PASSWORD': 'mysql1234',
+        'HOST': 'database-2.cfomi4oq8y8n.ap-southeast-2.rds.amazonaws.com',
+        'PORT': '3306',
     }
 }
 # DATABASES = {
