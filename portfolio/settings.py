@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-9olcd=v3@k-%#xy#itwny6n2ieos34srfh5^qrp31q%+^078h&
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['.vercel.app']
+ALLOWED_HOSTS = ['*']
 
 # Application definition
 
@@ -76,22 +76,22 @@ WSGI_APPLICATION = 'portfolio.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'portfolio',
-        'USER': 'admin',
-        'PASSWORD': 'mysql1234',
-        'HOST': 'database-2.cfomi4oq8y8n.ap-southeast-2.rds.amazonaws.com',
-        'PORT': '3306',
-    }
-}
 # DATABASES = {
 #     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': BASE_DIR / 'db.sqlite3',
+#         'ENGINE': 'django.db.backends.mysql',
+#         'NAME': 'portfolio',
+#         'USER': 'admin',
+#         'PASSWORD': 'mysql1234',
+#         'HOST': 'database-2.cfomi4oq8y8n.ap-southeast-2.rds.amazonaws.com',
+#         'PORT': '3306',
 #     }
 # }
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
+    }
+}
 
 # Password validation
 # https://docs.djangoproject.com/en/5.0/ref/settings/#auth-password-validators
